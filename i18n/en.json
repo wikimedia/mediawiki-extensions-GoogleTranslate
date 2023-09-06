@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sophivorus"
+		]
+	},
+	"googletranslate-desc": "Add a button to translate the current page using Google Translate",
+	"googletranslate-translate": "Translate",
+	"googletranslate-summary": "Automatic translation",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate requires Extension:HTMLPurifier in order to save translations safely."
+}

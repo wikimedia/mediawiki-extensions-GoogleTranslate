@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sophivorus"
+		]
+	},
+	"googletranslate-desc": "{{desc|name=GoogleTranslate|url=https://www.mediawiki.org/wiki/Extension:GoogleTranslate}}",
+	"googletranslate-translate": "Label for the button to translate",
+	"googletranslate-summary": "Edit summary when saving an automatic translation",
+	"googletranslate-htmlpurifier-error": "Error message when Extension:HTMLPurifier is not enabled"
+}

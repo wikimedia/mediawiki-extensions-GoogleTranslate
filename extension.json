@@ -1,0 +1,66 @@
+{
+	"manifest_version": 2,
+	"name": "GoogleTranslate",
+	"version": "1.0",
+	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTranslate",
+	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
+	"license-name": "GPL-3.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"MessagesDirs": {
+		"GoogleTranslate": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"GoogleTranslate": "GoogleTranslate.php",
+		"GoogleTranslateSave": "GoogleTranslateSave.php"
+	},
+	"APIModules": {
+		"googletranslatesave": "GoogleTranslateSave"
+	},
+	"ResourceModules": {
+		"ext.GoogleTranslate": {
+			"scripts": "GoogleTranslate.js",
+			"targets": [
+				"desktop",
+				"mobile"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "GoogleTranslate"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "GoogleTranslate::onBeforePageDisplay",
+		"ResourceLoaderGetConfigVars": "GoogleTranslate::onResourceLoaderGetConfigVars",
+		"SkinTemplateNavigation::Universal": "GoogleTranslate::onSkinTemplateNavigationUniversal"
+	},
+	"config": {
+		"GoogleTranslateNamespaces": {
+			"value": [ 0 ],
+			"merge_strategy": "provide_default"
+		},
+		"GoogleTranslateNearEdit": {
+			"value": true
+		},
+		"GoogleTranslateSave": {
+			"value": true
+		},
+		"GoogleTranslateSaveTitle": {
+			"value": true
+		},
+		"GoogleTranslateSaveNotice": {
+			"value": "Automatic translation"
+		},
+		"GoogleTranslateSaveCategories": {
+			"value": true
+		},
+		"GoogleTranslateSystemAccount": {
+			"value": "Translations bot"
+		}
+	}
+}
