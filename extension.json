@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "GoogleTranslate",
-	"version": "1.1",
+	"version": "1.2",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTranslate",
 	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
 	"license-name": "GPL-3.0-or-later",
@@ -48,16 +48,16 @@
 			"value": true
 		},
 		"GoogleTranslateSave": {
-			"value": true
+			"value": false
 		},
 		"GoogleTranslateSaveTitle": {
-			"value": true
+			"value": false
 		},
 		"GoogleTranslateSaveNotice": {
 			"value": ""
 		},
 		"GoogleTranslateSaveCategories": {
-			"value": true
+			"value": false
 		},
 		"GoogleTranslateSystemAccount": {
 			"value": "Translations bot"
