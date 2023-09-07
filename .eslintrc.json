@@ -4,5 +4,12 @@
 		"wikimedia/client-es5",
 		"wikimedia/jquery",
 		"wikimedia/mediawiki"
-	]
+	],
+	"globals": {
+		"GoogleTranslate": "writable",
+		"google": "readonly"
+	},
+	"rules": {
+		"no-jquery/no-global-selector": "off"
+	}
 }

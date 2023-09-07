@@ -18,16 +18,16 @@ window.GoogleTranslate = {
 	translate: function () {
 
 		// If Google Translate is not loaded yet, load it and try again
-		var googleTranslateElement = $( '#google-translate-element' );
-		if ( !googleTranslateElement.length ) {
-			googleTranslateElement = $( '<div hidden id="google-translate-element"></div>' );
-			$( 'body' ).after( googleTranslateElement );
+		var $googleTranslateElement = $( '#google-translate-element' );
+		if ( !$googleTranslateElement.length ) {
+			$googleTranslateElement = $( '<div>' ).attr( 'id', 'google-translate-element' ).hide();
+			$( 'body' ).after( $googleTranslateElement );
 			$.getScript( '//translate.google.com/translate_a/element.js?cb=GoogleTranslate.translate' );
 			return;
 		}
 
 		// Initialize the translate element
-		new google.translate.TranslateElement( {
+		google.translate.TranslateElement( {
 			pageLanguage: mw.config.get( 'wgPageContentLanguage' ),
 			layout: google.translate.TranslateElement.InlineLayout.SIMPLE
 		}, 'google-translate-element' );
@@ -35,7 +35,7 @@ window.GoogleTranslate = {
 		// Wait for the element to load and then open the language list
 		// @todo Wait for the relevant element rather than setTimeout
 		setTimeout( function () {
-			$( '.goog-te-gadget-simple' ).trigger( 'click' );
+			$( '#google-translate-element .goog-te-gadget-simple' ).trigger( 'click' );
 		}, 1000 );
 
 		// Make the language menu scrollable in small screens
@@ -60,21 +60,21 @@ window.GoogleTranslate = {
 		// Only check for translations in configured namespaces
 		var namespace = mw.config.get( 'wgNamespaceNumber' );
 		var namespaces = mw.config.get( 'wgGoogleTranslateNamespaces' );
-		if ( ! namespaces.includes( namespace ) ) {
+		if ( namespaces.indexOf( namespace ) === -1 ) {
 			return;
 		}
 
 		// Check for <font> tags because Google Translate inserts MANY such tags
 		var $content = $( '#mw-content-text > .mw-parser-output' ).clone();
 		$content.find( '.mw-editsection' ).remove(); // Remove edit section links
-		var nodes = $content.find( 'font' ).length;
-		if ( nodes < 10 ) {
+		var translatedNodes = $content.find( 'font' ).length;
+		if ( translatedNodes < 10 ) {
 			return;
 		}
 
 		// Ignore translations of translations
 		var title = mw.config.get( 'wgPageName' );
-		if ( title.match( "/[a-z]{2,3}$" ) ) {
+		if ( title.match( '/[a-z]{2,3}$' ) ) {
 			return;
 		}
 
@@ -91,25 +91,25 @@ window.GoogleTranslate = {
 		}
 
 		// Check if there's a saved translation already and record its length
-		if ( GoogleTranslate.nodes === undefined ) {
+		if ( GoogleTranslate.savedNodes === undefined ) {
 			new mw.Api().get( {
-				'action': 'parse',
-				'formatversion': 2,
-				'page': title + '/' + translationLanguage
+				action: 'parse',
+				formatversion: 2,
+				page: title + '/' + translationLanguage
 			} ).done( function ( data ) {
 				var html = data.parse.text;
 				var $html = $( html );
 				var nodes = $html.find( 'font' ).length;
-				GoogleTranslate.nodes = nodes;
+				GoogleTranslate.savedNodes = nodes;
 			} ).fail( function () {
-				GoogleTranslate.nodes = 0;
+				GoogleTranslate.savedNodes = 0;
 			} );
 			return;
 		}
 
 		// Save the current translation but only if it's longer than the saved one
-		if ( GoogleTranslate.nodes < nodes ) {
-			GoogleTranslate.nodes = nodes;
+		if ( GoogleTranslate.savedNodes < translatedNodes ) {
+			GoogleTranslate.savedNodes = translatedNodes;
 			GoogleTranslate.saveTranslation();
 		}
 	},
@@ -140,13 +140,13 @@ window.GoogleTranslate = {
 		// Send the raw translation for backend processing
 		var page = mw.config.get( 'wgPageName' );
 		new mw.Api().postWithEditToken( {
-			'action': 'googletranslatesave',
-			'page': page,
-			'language': translationLanguage,
-			'title': translatedTitle,
-			'text': translatedText
+			action: 'googletranslatesave',
+			page: page,
+			language: translationLanguage,
+			title: translatedTitle,
+			text: translatedText
 		} );
 	}
 };
 
-$( GoogleTranslate.init );
+mw.loader.using( 'mediawiki.api', GoogleTranslate.init );
