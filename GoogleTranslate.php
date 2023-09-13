@@ -98,6 +98,12 @@ class GoogleTranslate {
 			return;
 		}
 
+		// Check that this is actualy a subpage
+		if ( !$title->isSubpage() ) {
+			return;
+		}
+
+		// Set the page language to the subpage name
 		$subpage = $title->getSubpageText();
 		$mediawikiServices = MediaWikiServices::getInstance();
 		$languageNameUtils = $mediawikiServices->getLanguageNameUtils();
