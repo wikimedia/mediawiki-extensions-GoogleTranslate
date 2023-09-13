@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "GoogleTranslate",
-	"version": "1.4",
+	"version": "1.5",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTranslate",
 	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
 	"license-name": "GPL-3.0-or-later",
@@ -37,7 +37,8 @@
 	"Hooks": {
 		"BeforePageDisplay": "GoogleTranslate::onBeforePageDisplay",
 		"ResourceLoaderGetConfigVars": "GoogleTranslate::onResourceLoaderGetConfigVars",
-		"SkinTemplateNavigation::Universal": "GoogleTranslate::onSkinTemplateNavigationUniversal"
+		"SkinTemplateNavigation::Universal": "GoogleTranslate::onSkinTemplateNavigationUniversal",
+		"PageContentLanguage": "GoogleTranslate::onPageContentLanguage"
 	},
 	"config": {
 		"GoogleTranslateNamespaces": {
@@ -57,6 +58,9 @@
 			"value": ""
 		},
 		"GoogleTranslateSaveCategories": {
+			"value": false
+		},
+		"GoogleTranslateSubpageLanguage": {
 			"value": false
 		},
 		"GoogleTranslateSystemAccount": {

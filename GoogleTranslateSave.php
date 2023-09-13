@@ -1,6 +1,5 @@
 <?php
 
-use MediaWiki\MainConfigNames;
 use Wikimedia\ParamValidator\ParamValidator;
 
 /**
@@ -11,45 +10,42 @@ use Wikimedia\ParamValidator\ParamValidator;
 class GoogleTranslateSave extends ApiBase {
 
 	public function execute() {
-		global $wgGoogleTranslateSave,
-			$wgGoogleTranslateNamespaces,
-			$wgGoogleTranslateSaveTitle,
-			$wgGoogleTranslateSaveNotice,
-			$wgGoogleTranslateSaveCategories,
-			$wgGoogleTranslateSystemAccount;
+		$config = $this->getConfig();
 
 		// Make sure the feature is enabled
-		if ( !$wgGoogleTranslateSave ) {
+		if ( !$config->get( 'GoogleTranslateSave' ) ) {
 			return;
 		}
 
 		// Get the parameters
 		$page = $this->getParameter( 'page' );
 		$language = $this->getParameter( 'language' );
-		$title = $this->getParameter( 'title' );
-		$text = $this->getParameter( 'text' );
+		$translatedTitle = $this->getParameter( 'title' );
+		$translatedText = $this->getParameter( 'text' );
 
 		// Make sure that the page being translated actually exists
 		$title = Title::newFromText( $page );
-		if ( ! $title->exists() ) {
+		if ( !$title->exists() ) {
 			return;
 		}
 
 		// Make sure that we're editing a whitelisted namespace
 		$namespace = $title->getNamespace();
-		if ( ! in_array( $namespace, $wgGoogleTranslateNamespaces ) ) {
+		$namespaces = $config->get( 'GoogleTranslateNamespaces' );
+		if ( !in_array( $namespace, $namespaces ) ) {
 			return;
 		}
 
 		// Build the wikitext
-		$wikitext = "<html>$text</html>" ;
-		if ( $wgGoogleTranslateSaveTitle ) {
-			$wikitext = '{{DISPLAYTITLE:' . $title . '}}' . $wikitext;
+		$wikitext = "<html>$translatedText</html>";
+		if ( $config->get( 'GoogleTranslateSaveTitle' ) ) {
+			$wikitext = '{{DISPLAYTITLE:' . $translatedTitle . '}}' . $wikitext;
 		}
-		if ( $wgGoogleTranslateSaveNotice ) {
-			$wikitext = '{{' . $wgGoogleTranslateSaveNotice . '}}'. PHP_EOL . PHP_EOL . $wikitext;
+		$notice = $config->get( 'GoogleTranslateSaveNotice' );
+		if ( $notice ) {
+			$wikitext = '{{' . $notice . '}}' . PHP_EOL . PHP_EOL . $wikitext;
 		}
-		if ( $wgGoogleTranslateSaveCategories ) {
+		if ( $config->get( 'GoogleTranslateSaveCategories' ) ) {
 			$categories = array_keys( $title->getParentCategories() );
 			if ( $categories ) {
 				$wikitext .= PHP_EOL;
@@ -62,7 +58,8 @@ class GoogleTranslateSave extends ApiBase {
 
 		// Create or edit the relevant subpage
 		$subpage = $title->getSubpage( $language );
-		$user = User::newSystemUser( $wgGoogleTranslateSystemAccount );
+		$systemAccount = $config->get( 'GoogleTranslateSystemAccount' );
+		$user = User::newSystemUser( $systemAccount );
 		$wikipage = WikiPage::factory( $subpage );
 		$content = ContentHandler::makeContent( $wikitext, $subpage );
 		$summary = $this->msg( 'googletranslate-summary' )->inLanguage( $language )->plain();
@@ -71,12 +68,15 @@ class GoogleTranslateSave extends ApiBase {
 		$updater->setContent( 'main', $content );
 		$updater->saveRevision( $comment, EDIT_FORCE_BOT );
 
-		// Change the page language
-		if ( $this->getConfig()->get( MainConfigNames::PageLanguageUseDB ) ) {
+		// Change the page language if allowed
+		if ( $this->getConfig()->get( 'PageLanguageUseDB' ) ) {
 			SpecialPageLanguage::changePageLanguage( $this, $subpage, $language );
 		}
 	}
 
+	/**
+	 * @return array Associative array describing the allowed parameters
+	 */
 	public function getAllowedParams() {
 		return [
 			'page' => [
