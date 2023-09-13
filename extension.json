@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "GoogleTranslate",
-	"version": "1.3",
+	"version": "1.4",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTranslate",
 	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
 	"license-name": "GPL-3.0-or-later",

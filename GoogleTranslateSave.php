@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\MainConfigNames;
 use Wikimedia\ParamValidator\ParamValidator;
 
 /**
@@ -69,6 +70,11 @@ class GoogleTranslateSave extends ApiBase {
 		$updater = $wikipage->newPageUpdater( $user );
 		$updater->setContent( 'main', $content );
 		$updater->saveRevision( $comment, EDIT_FORCE_BOT );
+
+		// Change the page language
+		if ( $this->getConfig()->get( MainConfigNames::PageLanguageUseDB ) ) {
+			SpecialPageLanguage::changePageLanguage( $this, $subpage, $language );
+		}
 	}
 
 	public function getAllowedParams() {
