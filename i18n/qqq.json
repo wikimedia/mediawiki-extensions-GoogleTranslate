@@ -7,5 +7,10 @@
 	"googletranslate-desc": "{{desc|name=GoogleTranslate|url=https://www.mediawiki.org/wiki/Extension:GoogleTranslate}}",
 	"googletranslate-translate": "Label for the button to translate",
 	"googletranslate-summary": "Edit summary when saving an automatic translation",
-	"googletranslate-htmlpurifier-error": "Error message when Extension:HTMLPurifier is not enabled"
+	"googletranslate-htmlpurifier-error": "Error message when Extension:HTMLPurifier is not enabled",
+	"apihelp-googletranslatesave-summary": "Summary of the Google Translate API module",
+	"apihelp-googletranslatesave-param-page": "Description of the page parameter of the Google Translate API module",
+	"apihelp-googletranslatesave-param-language": "Description of language page parameter of the Google Translate API module",
+	"apihelp-googletranslatesave-param-title": "Description of the title parameter of the Google Translate API module",
+	"apihelp-googletranslatesave-param-text": "Description of the text parameter of the Google Translate API module"
 }

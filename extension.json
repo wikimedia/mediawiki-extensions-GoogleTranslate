@@ -4,6 +4,7 @@
 	"version": "1.5",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTranslate",
 	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
+	"descriptionmsg": "googletranslate-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
 	"requires": {

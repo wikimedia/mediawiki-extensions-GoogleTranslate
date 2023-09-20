@@ -7,5 +7,10 @@
 	"googletranslate-desc": "Add a button to translate the current page using Google Translate",
 	"googletranslate-translate": "Translate",
 	"googletranslate-summary": "Automatic translation",
-	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate requires Extension:HTMLPurifier in order to save translations safely."
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate requires Extension:HTMLPurifier in order to save translations safely.",
+	"apihelp-googletranslatesave-summary": "Save transaltions made with Google Translate",
+	"apihelp-googletranslatesave-param-page": "Name of the translated page",
+	"apihelp-googletranslatesave-param-language": "Language of the translation",
+	"apihelp-googletranslatesave-param-title": "Title of the translation",
+	"apihelp-googletranslatesave-param-text": "Text of the translation"
 }
