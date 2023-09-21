@@ -103,13 +103,16 @@ class GoogleTranslate {
 			return;
 		}
 
-		// Set the page language to the subpage name
+		// Check if the subpage is a supported language code
 		$subpage = $title->getSubpageText();
 		$mediawikiServices = MediaWikiServices::getInstance();
 		$languageNameUtils = $mediawikiServices->getLanguageNameUtils();
-		if ( $languageNameUtils->isValidCode( $subpage ) ) {
-			$languageFactory = $mediawikiServices->getLanguageFactory();
-			$pageLang = $languageFactory->getLanguage( $subpage );
+		if ( !$languageNameUtils->isSupportedLanguage( $subpage ) ) {
+			return;
 		}
+
+		// Set the page language to the subpage name
+		$languageFactory = $mediawikiServices->getLanguageFactory();
+		$pageLang = $languageFactory->getLanguage( $subpage );
 	}
 }
