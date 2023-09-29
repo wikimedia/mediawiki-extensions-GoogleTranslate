@@ -65,9 +65,7 @@ window.GoogleTranslate = {
 		}
 
 		// Check for <font> tags because Google Translate inserts MANY such tags
-		var $content = $( '#mw-content-text > .mw-parser-output' ).clone();
-		$content.find( '.mw-editsection' ).remove(); // Remove edit section links
-		var translatedNodes = $content.find( 'font' ).length;
+		var translatedNodes = $( '#mw-content-text' ).find( 'font' ).length;
 		if ( translatedNodes < 10 ) {
 			return;
 		}
