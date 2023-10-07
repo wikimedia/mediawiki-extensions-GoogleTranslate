@@ -8,7 +8,7 @@
 	"googletranslate-translate": "Translate",
 	"googletranslate-summary": "Automatic translation",
 	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate requires Extension:HTMLPurifier in order to save translations safely.",
-	"apihelp-googletranslatesave-summary": "Save transaltions made with Google Translate",
+	"apihelp-googletranslatesave-summary": "Save translations made with Google Translate",
 	"apihelp-googletranslatesave-param-page": "Name of the translated page",
 	"apihelp-googletranslatesave-param-language": "Language of the translation",
 	"apihelp-googletranslatesave-param-title": "Title of the translation",
