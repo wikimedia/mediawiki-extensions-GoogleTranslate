@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"googletranslate-desc": "Adder un button pro traducer le pagina actual usante Google Translate",
+	"googletranslate-translate": "Traducer",
+	"googletranslate-summary": "Traduction automatic",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate require Extension:HTMLPurifier pro poter salveguardar le traductiones de maniera secur.",
+	"apihelp-googletranslatesave-summary": "Salveguardar traductiones facite con Google Translate",
+	"apihelp-googletranslatesave-param-page": "Nomine del pagina traducite",
+	"apihelp-googletranslatesave-param-language": "Lingua del traduction",
+	"apihelp-googletranslatesave-param-title": "Titulo del traduction",
+	"apihelp-googletranslatesave-param-text": "Texto del traduction"
+}

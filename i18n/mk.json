@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"googletranslate-desc": "Стави копче за преведување на тековната страница со Преведувачот на Гугл",
+	"googletranslate-translate": "Преведи",
+	"googletranslate-summary": "Автоматски превод",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate го бара Extension:HTMLPurifier за да може безбедно да ги зачувува преводите.",
+	"apihelp-googletranslatesave-summary": "Зачувувајте преводи направени со Преведувачот на Гугл",
+	"apihelp-googletranslatesave-param-page": "Име на преведената страница",
+	"apihelp-googletranslatesave-param-language": "Јазик на преводот",
+	"apihelp-googletranslatesave-param-title": "Наслов на преводот",
+	"apihelp-googletranslatesave-param-text": "Текст на преводот"
+}

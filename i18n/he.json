@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"googletranslate-desc": "הוספת כפתור לתרגום הדף הנוכחי באמצעות Google Translate",
+	"googletranslate-translate": "תרגום מכונה",
+	"googletranslate-summary": "תרגום אוטומטי",
+	"googletranslate-htmlpurifier-error": "ההרחבה GoogleTranslate דורשת את Extension:HTMLPurifier כדי לשמור תרגומים בצורה בטוחה.",
+	"apihelp-googletranslatesave-summary": "שמירת תרגומים שנעשו עם Google Translate",
+	"apihelp-googletranslatesave-param-page": "שם הדף המתורגם",
+	"apihelp-googletranslatesave-param-language": "שפת התרגום",
+	"apihelp-googletranslatesave-param-title": "כותרת התרגום",
+	"apihelp-googletranslatesave-param-text": "טקסט התרגום"
+}

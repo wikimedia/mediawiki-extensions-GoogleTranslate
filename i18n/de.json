@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Brettchenweber"
+		]
+	},
+	"googletranslate-desc": "Fügt eine Schaltfläche hinzu, um die aktuelle Seite mit Google Translate zu übersetzen",
+	"googletranslate-translate": "Übersetzen",
+	"googletranslate-summary": "Automatische Übersetzung",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate benötigt die Extension:HTMLPurifier, um Übersetzungen sicher zu speichern.",
+	"apihelp-googletranslatesave-summary": "Mit Google Translate erstellte Übersetzungen speichern",
+	"apihelp-googletranslatesave-param-page": "Name der übersetzten Seite",
+	"apihelp-googletranslatesave-param-language": "Sprache der Übersetzung",
+	"apihelp-googletranslatesave-param-title": "Titel der Übersetzung",
+	"apihelp-googletranslatesave-param-text": "Text der Übersetzung"
+}

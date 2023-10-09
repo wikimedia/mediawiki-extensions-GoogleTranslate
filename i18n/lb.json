@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Volvox"
+		]
+	},
+	"googletranslate-desc": "Setzt ee Knäppchen derbäis fir déi aktuell Säit mat Google Translate z'iwwersetzen",
+	"googletranslate-translate": "Iwwersetzen",
+	"googletranslate-summary": "Automatesch Iwwersetzung",
+	"googletranslate-htmlpurifier-error": "D'Extension:GoogleTranslate brauch d'Extension:HTMLPurifier fir Iwwersetzunge sécher ze späicheren.",
+	"apihelp-googletranslatesave-summary": "Iwwersetzunge vu Google Translate späicheren",
+	"apihelp-googletranslatesave-param-page": "Numm vun der iwwersatener Säit",
+	"apihelp-googletranslatesave-param-language": "Sprooch vun der Iwwersetzung",
+	"apihelp-googletranslatesave-param-title": "Titel vun der Iwwersetzung",
+	"apihelp-googletranslatesave-param-text": "Text vun der Iwwersetzung"
+}
