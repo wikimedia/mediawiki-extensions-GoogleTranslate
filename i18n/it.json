@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"googletranslate-translate": "Traduci",
+	"googletranslate-summary": "Traduzione automatica",
+	"apihelp-googletranslatesave-param-page": "Nome della pagina tradotta",
+	"apihelp-googletranslatesave-param-title": "Titolo della traduzione",
+	"apihelp-googletranslatesave-param-text": "Testo della traduzione"
+}

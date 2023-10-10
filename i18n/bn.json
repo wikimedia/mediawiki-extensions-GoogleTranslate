@@ -4,8 +4,11 @@
 			"আফতাবুজ্জামান"
 		]
 	},
+	"googletranslate-desc": "গুগল অনুবাদ ব্যবহার করে বর্তমান পাতাটি অনুবাদ করতে একটি বোতাম যোগ করে",
 	"googletranslate-translate": "অনুবাদ করুন",
 	"googletranslate-summary": "স্বয়ংক্রিয় অনুবাদ",
+	"googletranslate-htmlpurifier-error": "নিরাপদে অনুবাদ সংরক্ষণ করার জন্য Extension:GoogleTranslate-এর Extension:HTMLPurifier প্রয়োজন।",
 	"apihelp-googletranslatesave-param-page": "অনূদিত পাতার নাম",
+	"apihelp-googletranslatesave-param-title": "অনুবাদের শিরোনাম",
 	"apihelp-googletranslatesave-param-text": "অনুবাদের পাঠ্য"
 }

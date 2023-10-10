@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ukhant Erdemt"
+		]
+	},
+	"googletranslate-desc": "Google Translate ашглҗ, өдгәһин халхиг орчулх товчиг немтн",
+	"googletranslate-translate": "Орчулһ",
+	"googletranslate-summary": "Автоматлсн орчулһ",
+	"googletranslate-htmlpurifier-error": "Өргдкл: GoogleTranslate-ын орчулһиг аюл уга хадһлхин төлә өргдкл HTMLPurifier шаардлһта.",
+	"apihelp-googletranslatesave-summary": "Google Translate-әр ашглн кесн орчулһ хадһлтн",
+	"apihelp-googletranslatesave-param-page": "Орчулсн халхин нерн",
+	"apihelp-googletranslatesave-param-language": "Орчулһин келн",
+	"apihelp-googletranslatesave-param-title": "Орчулһин һарцг",
+	"apihelp-googletranslatesave-param-text": "Орчулһин текст"
+}
