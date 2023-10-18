@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"googletranslate-desc": "Doda gumb za prevajanje trenutne strani z Google Prevajalnikom",
+	"googletranslate-translate": "Prevedi",
+	"googletranslate-summary": "Samodejni prevod",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate zahteva za varno shranjevanje prevodov Extension:HTMLPurifier.",
+	"apihelp-googletranslatesave-summary": "Shranjevanje prevodov, ustvarjenih z Google Prevajalnikom",
+	"apihelp-googletranslatesave-param-page": "Ime prevedene strani",
+	"apihelp-googletranslatesave-param-language": "Jezik prevoda",
+	"apihelp-googletranslatesave-param-title": "Naslov prevoda",
+	"apihelp-googletranslatesave-param-text": "Besedilo prevoda"
+}

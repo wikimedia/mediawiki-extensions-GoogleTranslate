@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hedda"
+		]
+	},
+	"googletranslate-desc": "Geçerli sayfayı Google Çeviri'yi kullanarak çevirmek için bir düğme ekleyin",
+	"googletranslate-translate": "Çevir",
+	"googletranslate-summary": "Otomatik çeviri",
+	"googletranslate-htmlpurifier-error": "Uzantı:GoogleTranslate, çevirilerin güvenli bir şekilde kaydedilmesi için Uzantı:HTMLPurifier'ı gerektirir.",
+	"apihelp-googletranslatesave-summary": "Google Çeviri ile yapılan çevirileri kaydedin",
+	"apihelp-googletranslatesave-param-page": "Çevrilen sayfanın adı",
+	"apihelp-googletranslatesave-param-language": "Çevirinin dili",
+	"apihelp-googletranslatesave-param-title": "Çevirinin başlığı",
+	"apihelp-googletranslatesave-param-text": "Çeviri metni"
+}
