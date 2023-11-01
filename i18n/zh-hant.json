@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"googletranslate-desc": "新增一個能使用 Google 翻譯來翻譯目前頁面的按鈕",
+	"googletranslate-translate": "翻譯",
+	"googletranslate-summary": "自動翻譯",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate 需要有啟動 Extension:HTMLPurifier 才能保存翻譯。",
+	"apihelp-googletranslatesave-summary": "儲存使用 Google 翻譯所做的翻譯",
+	"apihelp-googletranslatesave-param-page": "翻譯頁面名稱",
+	"apihelp-googletranslatesave-param-language": "翻譯語言",
+	"apihelp-googletranslatesave-param-title": "翻譯標題",
+	"apihelp-googletranslatesave-param-text": "翻譯文字"
+}
