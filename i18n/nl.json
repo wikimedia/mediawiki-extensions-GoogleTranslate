@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"googletranslate-desc": "Voegt een knop toe om de huidige pagina met behulp van Google Translate te vertalen",
+	"googletranslate-translate": "Vertalen",
+	"googletranslate-summary": "Automatische vertaling",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate vereist Extension:HTMLPurifier om vertalingen veilig op te slaan.",
+	"apihelp-googletranslatesave-summary": "Met Google Translate gemaakte vertalingen opslaan",
+	"apihelp-googletranslatesave-param-page": "Naam van de vertaalde pagina",
+	"apihelp-googletranslatesave-param-language": "Taal van de vertaling",
+	"apihelp-googletranslatesave-param-title": "Titel van de vertaling",
+	"apihelp-googletranslatesave-param-text": "Tekst van de vertaling"
+}
