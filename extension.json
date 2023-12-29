@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "GoogleTranslate",
-	"version": "1.6",
+	"version": "2.0",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTranslate",
 	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
 	"descriptionmsg": "googletranslate-desc",
