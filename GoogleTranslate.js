@@ -98,14 +98,28 @@ window.GoogleTranslate = {
 			return;
 		}
 
+		// Prepare the data for submission
+		var translatedTitle = $( '#firstHeading' ).text();
+		var $translatedText = $( '#mw-content-text' ).clone();
+		$translatedText.find( '.mw-editsection' ).remove().end(); // Remove edit section links
+		var translatedText = $translatedText.html(); // Remove outer .mw-parser-output
+		translatedText = translatedText.replace( /\n\s+|\n/g, '' ); // Remove extra spacing
+		translatedText = translatedText.replace( /<!--(.*?)-->/g, '' ); // Remove HTML comments
+		if ( translationLanguage === 'iw' ) {
+			translationLanguage = 'he'; // Fix old Hebrew language code
+		}
+
 		// Send the translation for backend processing
 		new mw.Api().postWithEditToken( {
 			action: 'googletranslatesave',
 			page: mw.config.get( 'wgPageName' ),
 			language: translationLanguage,
-			title: $( '#firstHeading' ).text(),
-			text: $( '#mw-content-text' ).html()
+			title: translatedTitle,
+			text: translatedText
 		} );
+
+		// Don't save more than once
+		clearInterval( GoogleTranslate.interval );
 	},
 
 	/**
