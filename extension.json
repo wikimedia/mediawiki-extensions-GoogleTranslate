@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "GoogleTranslate",
-	"version": "2.0",
+	"version": "3.0",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTranslate",
 	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
 	"descriptionmsg": "googletranslate-desc",
@@ -52,14 +52,14 @@
 		"GoogleTranslateSave": {
 			"value": false
 		},
+		"GoogleTranslateSaveTreshold": {
+			"value": 0.9
+		},
 		"GoogleTranslateSaveTitle": {
 			"value": false
 		},
 		"GoogleTranslateSaveNotice": {
 			"value": ""
-		},
-		"GoogleTranslateSaveCategories": {
-			"value": false
 		},
 		"GoogleTranslateSubpageLanguage": {
 			"value": false

@@ -31,6 +31,7 @@ class GoogleTranslate {
 	 */
 	public static function onResourceLoaderGetConfigVars( array &$vars, $skin, Config $config ) {
 		$vars['wgGoogleTranslateSave'] = $config->get( 'GoogleTranslateSave' );
+		$vars['wgGoogleTranslateSaveTreshold'] = $config->get( 'GoogleTranslateSaveTreshold' );
 		$vars['wgGoogleTranslateNamespaces'] = $config->get( 'GoogleTranslateNamespaces' );
 	}
 
