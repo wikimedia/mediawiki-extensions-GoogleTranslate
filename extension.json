@@ -58,6 +58,9 @@
 		"GoogleTranslateSaveTitle": {
 			"value": false
 		},
+		"GoogleTranslateSaveCategories": {
+			"value": false
+		},
 		"GoogleTranslateSaveNotice": {
 			"value": ""
 		},
