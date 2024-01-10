@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"googletranslate-desc": "Legg til en knapp for å oversette den gjeldende siden med Google Translate",
+	"googletranslate-translate": "Oversett",
+	"googletranslate-summary": "Automatisk oversettelse",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate krever Extension:HTMLPurifier for å lagre oversettelser på en trygg måte.",
+	"apihelp-googletranslatesave-summary": "Lagre oversettelser gjort med Google Translate",
+	"apihelp-googletranslatesave-param-page": "Navnet på den oversatte siden",
+	"apihelp-googletranslatesave-param-language": "Oversettelsens språk",
+	"apihelp-googletranslatesave-param-title": "Oversettelsens tittel",
+	"apihelp-googletranslatesave-param-text": "Oversettelsens tekst"
+}
