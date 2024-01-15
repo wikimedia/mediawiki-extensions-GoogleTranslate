@@ -82,9 +82,8 @@ class GoogleTranslate {
 	 *
 	 * @param Title $title
 	 * @param mixed &$pageLang
-	 * @param Language|StubUserLang $userLang
 	 */
-	public static function onPageContentLanguage( Title $title, &$pageLang, $userLang ) {
+	public static function onPageContentLanguage( Title $title, &$pageLang ) {
 		global $wgGoogleTranslateSubpageLanguage, $wgNamespacesWithSubpages;
 
 		// Check that this option is enabled
