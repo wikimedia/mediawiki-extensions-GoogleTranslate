@@ -26,6 +26,12 @@ window.GoogleTranslate = {
 			return;
 		}
 
+		// If we reach this point and google is not defined yet
+		// it means the user has a very slow connection or has blocked translate.google.com
+		if ( typeof google === 'undefined' ) {
+			return;
+		}
+
 		// Initialize the translate element
 		google.translate.TranslateElement( {
 			pageLanguage: mw.config.get( 'wgPageContentLanguage' ),
