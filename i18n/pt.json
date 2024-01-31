@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"googletranslate-desc": "Adicionar um botão para traduzir a página atual usando o Google Translate",
+	"googletranslate-translate": "Traduzir",
+	"googletranslate-summary": "Tradução automática",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate requer Extension:HTMLPurifier para gravar traduções com segurança.",
+	"apihelp-googletranslatesave-summary": "Gravar traduções feitas com o Google Translate",
+	"apihelp-googletranslatesave-param-page": "Nome da página traduzida",
+	"apihelp-googletranslatesave-param-language": "Língua da tradução",
+	"apihelp-googletranslatesave-param-title": "Título da tradução",
+	"apihelp-googletranslatesave-param-text": "Texto da tradução"
+}
