@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"googletranslate-desc": "Lisää painike kääntääksesi nykyisen sivun Google Kääntäjän avulla",
+	"googletranslate-translate": "Käännä",
+	"googletranslate-summary": "Automaattinen käännös",
+	"apihelp-googletranslatesave-summary": "Tallenna Google Kääntäjällä tehdyt käännökset",
+	"apihelp-googletranslatesave-param-page": "Käännetyn sivun nimi",
+	"apihelp-googletranslatesave-param-language": "Käännöksen kieli",
+	"apihelp-googletranslatesave-param-title": "Käännöksen otsikko",
+	"apihelp-googletranslatesave-param-text": "Käännöksen teksti"
+}
