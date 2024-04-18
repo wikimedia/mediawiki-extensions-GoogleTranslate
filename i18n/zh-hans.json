@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Anterdc99"
+		]
+	},
+	"googletranslate-desc": "添加一个使用Google翻译来翻译当前页面的按钮",
+	"googletranslate-translate": "翻译",
+	"googletranslate-summary": "自动翻译",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate需要Extension:HTMLPurifier才能安全保存翻译。",
+	"apihelp-googletranslatesave-summary": "保存由Google翻译所做的翻译",
+	"apihelp-googletranslatesave-param-page": "翻译页面的名称",
+	"apihelp-googletranslatesave-param-language": "翻译的语言",
+	"apihelp-googletranslatesave-param-title": "翻译的标题",
+	"apihelp-googletranslatesave-param-text": "翻译的文本"
+}
