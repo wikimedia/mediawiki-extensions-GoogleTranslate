@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ата"
+		]
+	},
+	"googletranslate-desc": "Додати кнопку для перекладу поточної сторінки з допомогою Google Translate",
+	"googletranslate-translate": "Перекласти",
+	"googletranslate-summary": "Автоматичний переклад",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate вимагає Extension:HTMLPurifier, щоб безпечно зберігати переклади.",
+	"apihelp-googletranslatesave-summary": "Зберігайте переклади, зроблені за допомогою Google Translate",
+	"apihelp-googletranslatesave-param-page": "Назва перекладеної сторінки",
+	"apihelp-googletranslatesave-param-language": "Мова перекладу",
+	"apihelp-googletranslatesave-param-title": "Назва перекладу",
+	"apihelp-googletranslatesave-param-text": "Текст перекладу"
+}
