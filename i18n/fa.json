@@ -1,8 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jeeputer",
 			"Rulebased"
 		]
 	},
-	"googletranslate-translate": "ترجمه کنید"
+	"googletranslate-desc": "افزودن دکمه‌ای برای ترجمهٔ صفحهٔ کنونی با استفاده از مترجم گوگل",
+	"googletranslate-translate": "ترجمه شود",
+	"googletranslate-summary": "ترجمهٔ خودکار",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate برای ذخیره‌سازی ترجمه‌ها به‌صورت امن، نیازمند Extension:HTMLPurifier است.",
+	"apihelp-googletranslatesave-summary": "ذخیره‌سازی ترجمه‌های تولیدشده با مترجم گوگل",
+	"apihelp-googletranslatesave-param-page": "نام صفحهٔ ترجمه‌شده",
+	"apihelp-googletranslatesave-param-language": "زبان ترجمه",
+	"apihelp-googletranslatesave-param-title": "عنوان ترجمه",
+	"apihelp-googletranslatesave-param-text": "متن ترجمه"
 }
