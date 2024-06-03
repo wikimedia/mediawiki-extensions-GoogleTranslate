@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chqaz"
+		]
+	},
+	"googletranslate-summary": "自動翻訳",
+	"apihelp-googletranslatesave-summary": "Google翻訳で翻訳した内容を保存する",
+	"apihelp-googletranslatesave-param-page": "翻訳されたページの名前"
+}
