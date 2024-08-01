@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"MacOS Weed"
+			"MacOS Weed",
+			"SleaY"
 		]
 	},
+	"googletranslate-desc": "Ajouter un bouton pour traduire la page actuelle à l'aide de Google Traduction",
 	"googletranslate-translate": "Traduire",
-	"googletranslate-summary": "Traduction automatique"
+	"googletranslate-summary": "Traduction automatique",
+	"apihelp-googletranslatesave-param-language": "Langue de la traduction"
 }
