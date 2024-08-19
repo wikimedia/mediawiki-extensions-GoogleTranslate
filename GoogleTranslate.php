@@ -51,6 +51,11 @@ class GoogleTranslate {
 			return;
 		}
 
+		// Don't add the button in redirects
+		if ( $title->isRedirect() ) {
+			return;
+		}
+
 		// Only add the button when viewing pages
 		$context = $skin->getContext();
 		$action = Action::getActionName( $context );
