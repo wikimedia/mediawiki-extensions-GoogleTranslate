@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Къарачайлы"
+		]
+	},
+	"googletranslate-desc": "Google Translate бетни хайырланыб кёчюрюр ючюн тиек къош",
+	"googletranslate-translate": "Кёчюр",
+	"googletranslate-summary": "Автомат халда кёчюрюу",
+	"googletranslate-htmlpurifier-error": "Кенгериу:GoogleTranslate Кенгериу излейди:HTMLPurifier, къоркъуусуз халда кёчюрюулени сакълар ючюн.",
+	"apihelp-googletranslatesave-summary": "Google Translate бла этилген кёчюрюулени сакъландыр",
+	"apihelp-googletranslatesave-param-page": "Кёчюрюлген бетни аты",
+	"apihelp-googletranslatesave-param-language": "Кёчюрюуню тили",
+	"apihelp-googletranslatesave-param-title": "Кёчюрюуню башлыгъы",
+	"apihelp-googletranslatesave-param-text": "Кёчюрюуню тексти"
+}

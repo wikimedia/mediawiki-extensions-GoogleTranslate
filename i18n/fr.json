@@ -2,11 +2,17 @@
 	"@metadata": {
 		"authors": [
 			"MacOS Weed",
-			"SleaY"
+			"SleaY",
+			"Mahabarata"
 		]
 	},
 	"googletranslate-desc": "Ajouter un bouton pour traduire la page actuelle à l'aide de Google Traduction",
 	"googletranslate-translate": "Traduire",
 	"googletranslate-summary": "Traduction automatique",
-	"apihelp-googletranslatesave-param-language": "Langue de la traduction"
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate nécessite Extension:HTMLPurifier pour pouvoir enregistrer les traductions en toute sécurité.",
+	"apihelp-googletranslatesave-summary": "Enregistrer les traductions réalisées avec Google Translate",
+	"apihelp-googletranslatesave-param-page": "Nom de la page traduite",
+	"apihelp-googletranslatesave-param-language": "Langue de la traduction",
+	"apihelp-googletranslatesave-param-title": "Titre de la traduction",
+	"apihelp-googletranslatesave-param-text": "Texte de la traduction"
 }
