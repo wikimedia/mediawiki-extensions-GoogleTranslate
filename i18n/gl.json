@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"googletranslate-desc": "Engade un botón para traducir a páxina actual mediante Google Translate",
+	"googletranslate-translate": "Traducir",
+	"googletranslate-summary": "Tradución automática",
+	"googletranslate-htmlpurifier-error": "A Extension:GoogleTranslate necesita a Extension:HTMLPurifier para gardar as traducións de forma segura.",
+	"apihelp-googletranslatesave-summary": "Gardar as traducións feitas con Google Translate",
+	"apihelp-googletranslatesave-param-page": "Nome da páxina traducida",
+	"apihelp-googletranslatesave-param-language": "Lingua da tradución",
+	"apihelp-googletranslatesave-param-title": "Título da tradución",
+	"apihelp-googletranslatesave-param-text": "Texto da tradución"
+}
