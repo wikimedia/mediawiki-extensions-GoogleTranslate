@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fotis A."
+		]
+	},
+	"googletranslate-desc": "Προσθέστε ένα κουμπί για να μεταφραστεί η τρέχουσα σελίδα χρησιμοποιώντας το Google Translate",
+	"googletranslate-translate": "Μετάφραση",
+	"googletranslate-summary": "Αυτόματη μετάφραση",
+	"googletranslate-htmlpurifier-error": "Επέκταση:Το GoogleTranslate απαιτεί Extension:HTMLPurifier προκειμένου να αποθηκεύονται οι μεταφράσεις με ασφάλεια.",
+	"apihelp-googletranslatesave-summary": "Αποθηκεύστε μεταφράσεις που έγιναν με την Μετάφραση Google",
+	"apihelp-googletranslatesave-param-page": "Όνομα σελίδας της μετάφρασης",
+	"apihelp-googletranslatesave-param-language": "Γλώσσα της μετάφρασης",
+	"apihelp-googletranslatesave-param-title": "Τίτλος της μετάφρασης",
+	"apihelp-googletranslatesave-param-text": "Κείμενο της μετάφρασης"
+}
