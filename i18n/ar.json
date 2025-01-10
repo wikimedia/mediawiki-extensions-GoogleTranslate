@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"googletranslate-desc": "أضف زرًا لترجمة الصفحة الحالية باستخدام Google Translate",
+	"googletranslate-translate": "ترجم",
+	"googletranslate-summary": "الترجمة الآلية",
+	"googletranslate-htmlpurifier-error": "يتطلب ملحق GoogleTranslate ملحق HTMLPurifier لحفظ الترجمات بأمان.",
+	"apihelp-googletranslatesave-summary": "حفظ الترجمات التي تم إجراؤها باستخدام Google Translate",
+	"apihelp-googletranslatesave-param-page": "اسم الصفحة المترجمة",
+	"apihelp-googletranslatesave-param-language": "لغة الترجمة",
+	"apihelp-googletranslatesave-param-title": "عنوان الترجمة",
+	"apihelp-googletranslatesave-param-text": "نص الترجمة"
+}
