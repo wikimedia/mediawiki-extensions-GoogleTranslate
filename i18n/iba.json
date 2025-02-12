@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Song GK"
+		]
+	},
+	"googletranslate-desc": "Tambah siti butang kena nyalin lambar tu ngena Google Translate",
+	"googletranslate-translate": "Salin",
+	"googletranslate-summary": "Salin automatik",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate begunaka Extension:HTMLPurifier kena nyimpan salin enggau likun.",
+	"apihelp-googletranslatesave-summary": "Simpan salin digaga enggau Google Translate",
+	"apihelp-googletranslatesave-param-page": "Nama lambar disalin",
+	"apihelp-googletranslatesave-param-language": "Jaku salin",
+	"apihelp-googletranslatesave-param-title": "Tajuk salin",
+	"apihelp-googletranslatesave-param-text": "Teks salin"
+}
