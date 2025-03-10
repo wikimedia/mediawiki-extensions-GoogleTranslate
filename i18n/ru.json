@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yurina Tatiana"
+		]
+	},
+	"googletranslate-desc": "Добавляет кнопку для перевода текущей страницы используя Google Переводчик",
+	"googletranslate-translate": "Перевести",
+	"googletranslate-summary": "Автоматический перевод",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate требует Extension:HTMLPurifier для того, чтобы безопасно сохранять переводы.",
+	"apihelp-googletranslatesave-summary": "Сохранить переводы, сделанные с помощью Google Переводчика",
+	"apihelp-googletranslatesave-param-page": "Название переведённой страницы",
+	"apihelp-googletranslatesave-param-language": "Язык перевода",
+	"apihelp-googletranslatesave-param-title": "Заголовок перевода",
+	"apihelp-googletranslatesave-param-text": "Текст перевода"
+}
