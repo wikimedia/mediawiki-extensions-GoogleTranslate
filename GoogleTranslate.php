@@ -85,10 +85,10 @@ class GoogleTranslate {
 	/**
 	 * Change the page language based on the subpage name
 	 *
-	 * @param Title $title
+	 * @param MediaWiki\Title\Title $title
 	 * @param mixed &$pageLang
 	 */
-	public static function onPageContentLanguage( Title $title, &$pageLang ) {
+	public static function onPageContentLanguage( MediaWiki\Title\Title $title, &$pageLang ) {
 		global $wgGoogleTranslateSubpageLanguage, $wgNamespacesWithSubpages;
 
 		// Check that this option is enabled

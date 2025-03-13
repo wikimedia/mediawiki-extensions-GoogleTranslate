@@ -1,4 +1,5 @@
 <?php
+
 use MediaWiki\MediaWikiServices;
 use Wikimedia\ParamValidator\ParamValidator;
 
@@ -59,9 +60,14 @@ class GoogleTranslateSave extends ApiBase {
 
 		// Create or edit the relevant subpage
 		$subpage = $title->getSubpage( $language );
+		$services = MediaWikiServices::getInstance();
+		$restrictions = $services->getRestrictionStore()->getRestrictions( $subpage, 'create' );
+		if ( $restrictions ) {
+			return;
+		}
 		$systemAccount = $config->get( 'GoogleTranslateSystemAccount' );
 		$user = User::newSystemUser( $systemAccount );
-		$wikipage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $subpage );
+		$wikipage = $services->getWikiPageFactory()->newFromTitle( $subpage );
 		$content = ContentHandler::makeContent( $wikitext, $subpage );
 		$summary = $this->msg( 'googletranslate-summary' )->inLanguage( $language )->plain();
 		$comment = CommentStoreComment::newUnsavedComment( $summary );
