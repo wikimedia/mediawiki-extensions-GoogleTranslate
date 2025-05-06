@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"ခွန်ဖန်ဒွဲ့"
+		]
+	},
+	"googletranslate-desc": "သွုံꩻနေး Google translateတဲင်ချာႏဘာႏသာႏ လိတ်မဲ့ငါယိုတာႏ သော့ꩻခလုတ်ဟုဲင်း",
+	"googletranslate-translate": "ချာႏဘာႏသာႏ",
+	"googletranslate-summary": "အဝ်ႏလွိုႏကာႏကာႏ ဒေါ့ꩻချာႏဘာႏသာႏ",
+	"apihelp-googletranslatesave-summary": "သိမ်ꩻထူႏ ချာႏဘာႏသာႏ ကမာꩻအီဒါႏတွမ်ႏ Google translateဖုံႏယိုသွူ။",
+	"apihelp-googletranslatesave-param-page": "ချာႏဘာႏသာႏထွူလဲဉ်းဒါႏ လိတ်မဲ့ငါမဉ်ꩻ",
+	"apihelp-googletranslatesave-param-language": "ချာႏဘာႏသာႏ ဘာႏသာႏငဝ်းငွါ",
+	"apihelp-googletranslatesave-param-title": "ချာႏဘာႏသာႏ ကတူႏစဲဉ်ႏ",
+	"apihelp-googletranslatesave-param-text": "ချာႏဘာႏသာႏ လိတ်ယာႏ"
+}
