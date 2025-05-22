@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"ButterflyOfFire"
+		]
+	},
+	"googletranslate-desc": "Rnu taqeffalt i tsuqilt n usebter amiran s useqdec n Google Translate",
+	"googletranslate-translate": "Suqel",
+	"googletranslate-summary": "Tasuqilt tawurmant",
+	"googletranslate-htmlpurifier-error": "Asiɣzaf: GoogleTranslate yesra Extension:HTMLPurifier i wakken ad isekles tisuqilin s tɣellist.",
+	"apihelp-googletranslatesave-summary": "Sekles tisuqilin yemmugen s Google Translate",
+	"apihelp-googletranslatesave-param-page": "Isem n usebter yettwasuqlen",
+	"apihelp-googletranslatesave-param-language": "Tutlayt n tsuqilt",
+	"apihelp-googletranslatesave-param-title": "Azwel n tsuqilt",
+	"apihelp-googletranslatesave-param-text": "Aḍris n tasuqilt"
+}
