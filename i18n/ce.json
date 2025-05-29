@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"googletranslate-desc": "Google Translate лелош карарчу хенахь йолу агӀо гочйан нуьйда тӀетуху",
+	"googletranslate-translate": "Гочйан",
+	"googletranslate-summary": "Автогоч",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate оьшу Extension:HTMLPurifier гочдарш маьрша Ӏалашдархьама.",
+	"apihelp-googletranslatesave-summary": "Google Translate гӀоьнца дина гочдарш Ӏалашдан",
+	"apihelp-googletranslatesave-param-page": "Гочйинчу агӀонан цӀе",
+	"apihelp-googletranslatesave-param-language": "Гочдаран мотт",
+	"apihelp-googletranslatesave-param-title": "Гочдаран цӀе",
+	"apihelp-googletranslatesave-param-text": "Гочдаран текст"
+}
