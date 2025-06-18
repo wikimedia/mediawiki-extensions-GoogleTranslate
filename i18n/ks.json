@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"googletranslate-desc": "گوٗگٕل ترجمہٕ استعمالکہِ وسیٖلہٕ اکھ بٹُن اؠڈ یتھ صفس ترجمہٕ کرنہٕ خٲطرٕ",
+	"googletranslate-translate": "ترجمہٕ",
+	"googletranslate-summary": "خۄدکار ترجمہٕ ترجمہٕ",
+	"googletranslate-htmlpurifier-error": "توسیٖع:گوٗگٕل ترجمس چھےٚ توسیٖع ہِنٛز ضرورتھ: HTMLصفٲئی زِ ترجمہٕ گژھن محفوظ روزٕنؠ.",
+	"apihelp-googletranslatesave-summary": "محفوٗظ تھٲوِو ترجمہٕ یمہٕ گوٗگٕل ترجمہٕ سٕتۍ بناونہٕ آمٕتؠ چِھ",
+	"apihelp-googletranslatesave-param-page": "ترجمہٕ کردہ صفُک ناو",
+	"apihelp-googletranslatesave-param-language": "ترجمٕچ زبان",
+	"apihelp-googletranslatesave-param-title": "ترجمُک سرنامہٕ",
+	"apihelp-googletranslatesave-param-text": "ترجمُک مَتَن"
+}
