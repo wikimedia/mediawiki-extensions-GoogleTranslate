@@ -18,7 +18,7 @@ window.GoogleTranslate = {
 	translate: function () {
 
 		// If Google Translate is not loaded yet, load it and try again
-		var $googleTranslateElement = $( '#google-translate-element' );
+		let $googleTranslateElement = $( '#google-translate-element' );
 		if ( !$googleTranslateElement.length ) {
 			$googleTranslateElement = $( '<div>' ).attr( 'id', 'google-translate-element' ).hide();
 			$( 'body' ).after( $googleTranslateElement );
@@ -40,14 +40,14 @@ window.GoogleTranslate = {
 
 		// Wait for the element to load and then open the language list
 		// @todo Wait for the relevant element rather than setTimeout
-		setTimeout( function () {
+		setTimeout( () => {
 			$( '#google-translate-element .goog-te-gadget-simple' ).trigger( 'click' );
 		}, 1000 );
 
 		// Make the language menu scrollable in small screens
 		// @todo Wait for the relevant element rather than setTimeout
-		setTimeout( function () {
-			var $frames = $( '#goog-gt-tt' ).nextAll( 'iframe' );
+		setTimeout( () => {
+			const $frames = $( '#goog-gt-tt' ).nextAll( 'iframe' );
 			if ( $frames.length ) {
 				$frames.attr( 'scrollable', true ).css( 'max-width', '100%' );
 				$frames.contents().find( 'body' ).css( 'overflow', 'scroll' );
@@ -61,54 +61,54 @@ window.GoogleTranslate = {
 	checkTranslation: function () {
 
 		// Only check for translations when viewing content
-		var action = mw.config.get( 'wgAction' );
+		const action = mw.config.get( 'wgAction' );
 		if ( action !== 'view' ) {
 			return;
 		}
 
 		// Only check for translations in configured namespaces
-		var namespace = mw.config.get( 'wgNamespaceNumber' );
-		var namespaces = mw.config.get( 'wgGoogleTranslateNamespaces' );
-		if ( namespaces.indexOf( namespace ) === -1 ) {
+		const namespace = mw.config.get( 'wgNamespaceNumber' );
+		const namespaces = mw.config.get( 'wgGoogleTranslateNamespaces' );
+		if ( !namespaces.includes( namespace ) ) {
 			return;
 		}
 
 		// Check for <font> tags because Google Translate inserts a bunch of those
-		var translatedNodes = $( '#mw-content-text' ).find( 'font' ).length;
+		const translatedNodes = $( '#mw-content-text' ).find( 'font' ).length;
 		if ( translatedNodes < 10 ) {
 			return;
 		}
 
 		// Ignore translations of translations
 		// @todo Make more robust, sometimes matches pages with short subpage titles
-		var title = mw.config.get( 'wgPageName' );
+		const title = mw.config.get( 'wgPageName' );
 		if ( title.match( '/[a-z]{2,3}$' ) ) {
 			return;
 		}
 
 		// Ignore rare and mysterious 'auto' language
-		var translationLanguage = $( 'html' ).attr( 'lang' ).replace( /-.+/, '' ).trim();
+		let translationLanguage = $( 'html' ).attr( 'lang' ).replace( /-.+/, '' ).trim();
 		if ( translationLanguage === 'auto' ) {
 			return;
 		}
 
 		// Ignore translations to the same language (including language variants like en-GB)
-		var contentLanguage = mw.config.get( 'wgPageContentLanguage' );
+		const contentLanguage = mw.config.get( 'wgPageContentLanguage' );
 		if ( contentLanguage === translationLanguage ) {
 			return;
 		}
 
 		// Ignore partial translations
-		var translatedRatio = GoogleTranslate.getTranslatedRatio();
+		const translatedRatio = GoogleTranslate.getTranslatedRatio();
 		if ( translatedRatio < mw.config.get( 'wgGoogleTranslateSaveTreshold' ) ) {
 			return;
 		}
 
 		// Prepare the data for submission
-		var translatedTitle = $( '#firstHeading' ).text();
-		var $translatedText = $( '#mw-content-text' ).clone();
+		const translatedTitle = $( '#firstHeading' ).text();
+		const $translatedText = $( '#mw-content-text' ).clone();
 		$translatedText.find( '.mw-editsection' ).remove().end(); // Remove edit section links
-		var translatedText = $translatedText.html(); // Remove outer .mw-parser-output
+		let translatedText = $translatedText.html(); // Remove outer .mw-parser-output
 		translatedText = translatedText.replace( /\n\s+|\n/g, '' ); // Remove extra spacing
 		translatedText = translatedText.replace( /<!--(.*?)-->/g, '' ); // Remove HTML comments
 		if ( translationLanguage === 'iw' ) {
@@ -134,14 +134,14 @@ window.GoogleTranslate = {
 	 * @return {number} Translated ratio, for example 0.42
 	 */
 	getTranslatedRatio: function () {
-		var $translation = $( '#mw-content-text' );
+		const $translation = $( '#mw-content-text' );
 
 		// Get the nodes that can be translated
-		var $translatableNodes = $translation.find( '*' ).contents().filter( function () {
+		const $translatableNodes = $translation.find( '*' ).contents().filter( function () {
 			if ( this.nodeType !== Node.TEXT_NODE ) {
 				return false;
 			}
-			var value = this.nodeValue.trim();
+			const value = this.nodeValue.trim();
 			if ( !value ) {
 				return false;
 			}
@@ -158,7 +158,7 @@ window.GoogleTranslate = {
 		} );
 
 		// Get the nodes that are actually translated
-		var $translatedNodes = $translatableNodes.parent( 'font' );
+		const $translatedNodes = $translatableNodes.parent( 'font' );
 
 		// Return the ratio
 		return $translatedNodes.length / $translatableNodes.length;
@@ -171,7 +171,7 @@ window.GoogleTranslate = {
 	 * @return {boolean}
 	 */
 	isValidUrl: function ( string ) {
-		var url;
+		let url;
 		try {
 			url = new URL( string );
 		} catch ( error ) {
