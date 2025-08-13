@@ -4,5 +4,13 @@
 			"JeffreyKim"
 		]
 	},
-	"googletranslate-desc": "加個掣就可以用 Google 翻譯翻譯當前頁面"
+	"googletranslate-desc": "加個掣就可以用 Google 翻譯翻譯當前頁面",
+	"googletranslate-translate": "翻譯",
+	"googletranslate-summary": "自動翻譯",
+	"googletranslate-htmlpurifier-error": "擴充程式： Google 翻譯需要擴充程式： HTML 淨化器，先至可以安全噉儲存啲翻譯。",
+	"apihelp-googletranslatesave-summary": "儲存用Google翻譯嚟做嘅翻譯",
+	"apihelp-googletranslatesave-param-page": "翻譯咗嘅版個名",
+	"apihelp-googletranslatesave-param-language": "翻譯嘅語言",
+	"apihelp-googletranslatesave-param-title": "翻譯嘅標題",
+	"apihelp-googletranslatesave-param-text": "翻譯嘅文字"
 }
