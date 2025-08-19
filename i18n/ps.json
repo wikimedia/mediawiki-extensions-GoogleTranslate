@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"googletranslate-desc": "د گوگل ژباړن په کارولو سره د اوسني مخ ژباړلو لپاره يوه تڼۍ ورگډول",
+	"googletranslate-translate": "ژباړل",
+	"googletranslate-summary": "خپلسرې ژباړه",
+	"googletranslate-htmlpurifier-error": "شاتاړی:په خوندي توگه د ژباړو خوندي‌کولو لپاره اېچ‌ټي‌اېم‌اېل‌سپاکوونکی د گوگل‌ژباړن شاتاړی اړين دی.",
+	"apihelp-googletranslatesave-summary": "گوگل ژباړن سره ترسره‌شوې ژباړې خوندي‌کول",
+	"apihelp-googletranslatesave-param-page": "د ژباړل‌شوي مخ نوم",
+	"apihelp-googletranslatesave-param-language": "د ژباړې ژبه",
+	"apihelp-googletranslatesave-param-title": "د ژباړې سرليک",
+	"apihelp-googletranslatesave-param-text": "د ژباړې ليک"
+}
