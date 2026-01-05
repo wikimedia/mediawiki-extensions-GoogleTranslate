@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stefan2255"
+		]
+	},
+	"googletranslate-desc": "Lägg till en knapp för att översätta den aktuella sidan med Google Translate",
+	"googletranslate-translate": "Översätt",
+	"googletranslate-summary": "Automatisk översättning",
+	"googletranslate-htmlpurifier-error": "Tillägg:GoogleTranslate kräver tillägg:HTMLPurifier för att kunna spara översättningar säkert.",
+	"apihelp-googletranslatesave-summary": "Spara översättningar gjorda med Google Translate",
+	"apihelp-googletranslatesave-param-page": "Namn på den översatta sidan",
+	"apihelp-googletranslatesave-param-language": "Översättningens språk",
+	"apihelp-googletranslatesave-param-title": "Översättningens titel",
+	"apihelp-googletranslatesave-param-text": "Översättningens text"
+}
