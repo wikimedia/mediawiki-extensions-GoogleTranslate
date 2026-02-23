@@ -10,7 +10,7 @@ class GoogleTranslate {
 	 * @param OutputPage &$out
 	 * @param Skin &$skin
 	 */
-	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
+	public static function onBeforePageDisplay( MediaWiki\Output\OutputPage &$out, Skin &$skin ) {
 		$config = $skin->getConfig();
 
 		// If the feature to save translations is enabled, check for the Extension:HTMLPurifier dependecy
