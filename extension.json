@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "GoogleTranslate",
-	"version": "3.5",
+	"version": "3.6",
 	"url": "https://www.mediawiki.org/wiki/Extension:GoogleTranslate",
 	"author": "[https://www.mediawiki.org/wiki/User:Sophivorus Sophivorus]",
 	"descriptionmsg": "googletranslate-desc",
@@ -69,6 +69,9 @@
 		},
 		"GoogleTranslateSystemAccount": {
 			"value": "Translations bot"
+		},
+		"GoogleTranslateClass": {
+			"value": ""
 		}
 	}
 }

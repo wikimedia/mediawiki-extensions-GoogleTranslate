@@ -73,6 +73,7 @@ class GoogleTranslate {
 		// Define the button
 		$readAloud = [
 			'id' => 'ca-google-translate',
+			'class' => $config->get( 'GoogleTranslateClass' ),
 			'href' => '#',
 			'text' => wfMessage( 'googletranslate-translate' )->plain()
 		];
