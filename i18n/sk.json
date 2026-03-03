@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Oujon"
+		]
+	},
+	"googletranslate-desc": "Pridajte tlačidlo na preklad aktuálnej stránky pomocou Prekladača Google",
+	"googletranslate-translate": "Preložiť",
+	"googletranslate-summary": "Automatický preklad",
+	"googletranslate-htmlpurifier-error": "Rozšírenie:GoogleTranslate vyžaduje rozšírenie:HTMLPurifier, aby sa preklady dali bezpečne uložiť.",
+	"apihelp-googletranslatesave-summary": "Uložiť preklady vytvorené pomocou Prekladača Google",
+	"apihelp-googletranslatesave-param-page": "Názov preloženej stránky",
+	"apihelp-googletranslatesave-param-language": "Jazyk prekladu",
+	"apihelp-googletranslatesave-param-title": "Názov prekladu",
+	"apihelp-googletranslatesave-param-text": "Text prekladu"
+}
