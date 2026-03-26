@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"googletranslate-desc": "Adicionar um botão para traduzir a página atual usando o Google Tradutor",
+	"googletranslate-translate": "Traduzir",
+	"googletranslate-summary": "Tradução automática",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate requer Extension:HTMLPurifier para salvar traduções com segurança.",
+	"apihelp-googletranslatesave-summary": "Salvar traduções feitas com o Google Tradutor",
+	"apihelp-googletranslatesave-param-page": "Nome da página traduzida",
+	"apihelp-googletranslatesave-param-language": "Idioma da tradução",
+	"apihelp-googletranslatesave-param-title": "Título da tradução",
+	"apihelp-googletranslatesave-param-text": "Texto da tradução"
+}
