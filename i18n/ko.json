@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"YeBoy371",
 			"Ykhwong"
 		]
@@ -11,5 +12,7 @@
 	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate에는 번역 내용을 안전하게 저장하기 위해 Extension:HTMLPurifier가 필요합니다.",
 	"apihelp-googletranslatesave-summary": "구글 번역으로 번역한 내용을 저장합니다.",
 	"apihelp-googletranslatesave-param-page": "번역된 문서의 이름",
-	"apihelp-googletranslatesave-param-language": "번역 언어"
+	"apihelp-googletranslatesave-param-language": "번역 언어",
+	"apihelp-googletranslatesave-param-title": "번역 제목",
+	"apihelp-googletranslatesave-param-text": "번역 텍스트"
 }
