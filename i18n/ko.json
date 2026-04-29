@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ykhwong",
-			"YeBoy371"
+			"YeBoy371",
+			"Tensama0415"
 		]
 	},
 	"googletranslate-desc": "구글 번역을 사용하여 현재 문서를 번역하는 버튼 추가",
@@ -11,5 +12,7 @@
 	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate에는 번역 내용을 안전하게 저장하기 위해 Extension:HTMLPurifier가 필요합니다.",
 	"apihelp-googletranslatesave-summary": "구글 번역으로 번역한 내용을 저장합니다.",
 	"apihelp-googletranslatesave-param-page": "번역된 문서의 이름",
-	"apihelp-googletranslatesave-param-language": "번역 언어"
+	"apihelp-googletranslatesave-param-language": "번역 언어",
+	"apihelp-googletranslatesave-param-title": "번역 제목",
+	"apihelp-googletranslatesave-param-text": "번역 텍스트"
 }
