@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"googletranslate-desc": "Ku dar badhan lagu turjumo bogga hadda jira adigoo adeegsanaya Google Translate",
+	"googletranslate-translate": "Turjum",
+	"googletranslate-summary": "Turjumaad otomaatig ah",
+	"googletranslate-htmlpurifier-error": "Extension:GoogleTranslate waxay u baahan tahay Extension:HTMLPurifier si loo kaydiyo turjumaadaha si ammaan ah.",
+	"apihelp-googletranslatesave-summary": "Kaydi turjumaadaha lagu sameeyay Google Translate",
+	"apihelp-googletranslatesave-param-page": "Magaca bogga la turjumay",
+	"apihelp-googletranslatesave-param-language": "Luuqadda turjumaadda",
+	"apihelp-googletranslatesave-param-title": "Cinwaanka turjumaadda",
+	"apihelp-googletranslatesave-param-text": "Qoraalka turjumaadda"
+}
